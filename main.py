@@ -2,13 +2,11 @@ import random
 from hangman_art import stages, logo
 from hangman_words import word_list
 
-
-
-#TODO-1: - Create a variable called 'lives' to keep track of the number of lives left. 
-#Set 'lives' to equal 6.
+print(logo)
+print("Welcome to Hangman!")
 lives = 6
 chosen_word = random.choice(word_list)
-print(f'Pssst, the solution is {chosen_word}.')
+#print(f'Pssst, the solution is {chosen_word}.')
 
 display = []
 for i in range(0, len(chosen_word)):
